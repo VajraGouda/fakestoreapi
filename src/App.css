@@ -1,0 +1,36 @@
+/*Navbar*/
+
+.navbar-nav a{
+  font-size: 18px;
+}
+
+.wrapper {
+  padding-left: 100px;
+  margin-top: 100px;
+  }
+
+  .fw-bold {
+    font-size: x-large;
+  }
+
+  .desc {
+    font-weight: 500;
+    font-size: large;
+  }
+
+  .Ptitle {
+    font-size: 25px;
+  }
+
+  .btn btn-primary me-2{
+    background-color:grey ;
+  }
+
+  .cartDef {
+    padding-left: 700px;
+    padding-top: 50px;
+    font-size: xx-large;
+  }
+
+ 
+  
