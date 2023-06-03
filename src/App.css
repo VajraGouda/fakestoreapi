@@ -65,5 +65,13 @@
     display: inline-flexbox;
   }
 
- 
+ .icon {
+  color: #fcba03;
+  /* background-color: yellow; */
+ }
+
+ .cata{
+  color: black;
+  text-decoration: none;
+ }
   

@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import Star from './Star';
 
 
 
@@ -59,16 +60,18 @@ const Category = (props) => {
             <div className="card h-100 text-center p-4" key={id}>
                 <Link to={'/products/detail/' + id}> <img src={image} className="card-img-top" alt={title} height="250px" /></Link>
                 <div className="card-body">
-                    <h8 className="card-title mb-3 ">Brand, {title.substring(0, 20)}...</h8>
-                    <div className="rating"> <span>({rating.count})</span></div>
-                    <p className="card-text lead fw-bold">${price}</p>
+                    
+                    <a href = {'/products/detail/' + id} className="cata"><h8 className="card-title mb-3 ">Brand, {title.substring(0, 20)}...</h8></a>
+                    <a href = {'/products/detail/' + id} className="cata"><Star stars = {rating.rate} reviews = {rating.count} /></a>
+                    <a href = {'/products/detail/' + id} className="cata"> <p className="card-text lead fw-bold">${price}</p></a>
                     <button className="btn btn-outline-dark m-2 align-center" onClick={() => handleCart(product)} >
                         <FontAwesomeIcon icon={faCartShopping} />Add to cart</button>
-                    <div className="wishC"> <button href="#" className="btn btn-outline-dark" 
-                    onClick={() => handleWish(product)}><FontAwesomeIcon icon={faHeart} /></button>
+                    <div className="wishC"> <button href="#" className="btn btn-outline-dark"
+                        onClick={() => handleWish(product)}><FontAwesomeIcon icon={faHeart} /></button>
                     </div>
 
                 </div>
+                
             </div>
 
         </div>
