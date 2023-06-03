@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRightToBracket, faUserPlus, faCartShopping, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faRightToBracket, faUserPlus, faCartShopping, faHeart, faUser } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+
 
 
 const Navbar = () => {
@@ -16,9 +17,11 @@ const Navbar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        {/* //removed mx-auto from below*/}
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
 
-                            <li className="nav-item">
+                            <li className="nav-item-all">
                                 <Link className="nav-link" to="/">All</Link>
                             </li>
 
@@ -31,30 +34,33 @@ const Navbar = () => {
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link" to="/jewelery">Jewelery</Link>
+                                <Link className="nav-link" to="/jewelery">Jewellery</Link>
                             </li>
 
                             <li className="nav-item">
                                 <Link className="nav-link" to="/electronics">Electronics</Link>
                             </li>
-
                         </ul>
-                        <div className="buttons">
 
-                            <Link to="/wishlist" className="btn btn-outline-dark me-2">
+                        <div className="buttons">
+                            <Link to="/wishlist" className="btn btn-outline-dark m-2 align-center">
                                 <FontAwesomeIcon icon={faHeart} /> Wishlist
                             </Link>
 
-                            <Link to="/login" className="btn btn-outline-dark me-2">
-                                <FontAwesomeIcon icon={faRightToBracket} /> Login
-                            </Link>
 
-                            <Link to="/register" className="btn btn-outline-dark me-2">
-                                <FontAwesomeIcon icon={faUserPlus} /> Register
-                            </Link>
+                            <li className="nav-item dropdown">
+                                <a className="btn outline-dark dropdown-toggle mt-2" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <FontAwesomeIcon icon={faUser} /> Login <span fs-1px>or Sign Up</span>
+                                </a>
+                                <ul className="dropdown-menu border-color-primary" aria-labelledby="navbarDropdown" id='submenu' data-bs-parent='#parentM'>
+                                    <li><a className="dropdown-item" href="/login">Login</a></li>
+                                    <li><a className="dropdown-item" href="/register">Sign Up</a></li>
+                                </ul>
+                            </li>
 
-                            <Link to="/cart" className="btn btn-primary me-2">
-                                <FontAwesomeIcon icon={faCartShopping} /> Cart <span className="badge badge-light"></span>
+
+                            <Link to="/cart" className="btn btn-outline-dark m-2 align-center">
+                                <FontAwesomeIcon icon={faCartShopping} /> <span className="badge badge-light"></span>
                             </Link>
 
 

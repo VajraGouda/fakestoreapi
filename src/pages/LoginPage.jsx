@@ -4,6 +4,7 @@ import axios from "axios";
 import Endpoints from "../api/Endpoints";
 import * as Yup from "yup";
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const LoginPage = () => {
     const [requestResponse, setRequestResponse] = useState({
@@ -33,7 +34,7 @@ const LoginPage = () => {
 
                 (error) => {
                     setRequestResponse({
-                        textMessage: 'error.response.data.message',
+                        textMessage: 'Failed Login',
                         alertClass: 'alert alert-danger'
 
 
@@ -52,6 +53,8 @@ const LoginPage = () => {
 
     return (
         <div className="container">
+            <Navbar />
+
             <div className="row">
                 <div className="col-md-3"></div>
                 <div className="col-md-6">
@@ -94,7 +97,7 @@ const LoginPage = () => {
 
 
                                             <input type="submit" value="Login" className="btn btn-outline-dark me-2 m-4" />
-                                            <Link to = '/' className="btn btn-outline-dark m-2 align-center">Home Page</Link>
+                                            <Link to='/' className="btn btn-outline-dark m-2 align-center">Home Page</Link>
                                         </Form>
 
                                     )
@@ -108,7 +111,7 @@ const LoginPage = () => {
                         <p className="text-center">
                             New User? <a href="/register">Click Here</a>
                         </p>
-                    
+
 
                     </div>
                 </div>

@@ -86,8 +86,10 @@ const ProductDetailPage = () => {
                             <p className="desc">${product.description}</p>
                             <p className="fw-bold">${product.price}</p>
                             <button className="btn btn-outline-dark m-2 align-center" onClick={() => handleCart(product)}>Add to Cart</button>
-                            <button href="#" className="btn btn-outline-dark" onClick={() => handleWish(product)}><FontAwesomeIcon icon={faHeart} /> Wishlist</button>
-
+                            <div className="wishP"><button href="#" 
+                            className="btn btn-outline-dark" 
+                            onClick={() => handleWish(product)}><FontAwesomeIcon icon={faHeart} /></button>
+                            </div>
 
 
                         </div>
