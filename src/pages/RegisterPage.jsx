@@ -13,9 +13,11 @@ const RegisterPage = () => {
 
     const initialValues = {
         firstName: '',
+        lastName: '',
         email: '',
         mobile: '',
         password: '',
+        confirm_password: ''
     }
 
     const onSubmit = (values) => {

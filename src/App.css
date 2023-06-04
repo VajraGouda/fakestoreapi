@@ -1,77 +1,97 @@
 /*Navbar*/
 
-.navbar-nav a{
+.navbar-nav a {
   font-size: 18px;
 }
 
 .wrapper {
   padding-left: 100px;
   margin-top: 60px;
-  }
+}
 
-  .fw-bold {
-    font-size: x-large;
-  }
+.fw-bold {
+  font-size: x-large;
+}
 
-  .desc {
-    font-weight: 500;
-    font-size: large;
-  }
+.desc {
+  font-weight: 500;
+  font-size: large;
+}
 
-  .Ptitle {
-    font-size: 25px;
-  }
+.Ptitle {
+  font-size: 25px;
+}
 
-  .btn btn-primary me-2{
-    background-color:grey ;
-  }
+.btn btn-primary me-2 {
+  background-color: grey;
+}
 
-  .cartDef {
-    padding-left: 700px;
-    padding-top: 50px;
-    font-size: xx-large;
-  }
+.cartDef {
+  padding-left: 700px;
+  padding-top: 50px;
+  font-size: xx-large;
+}
 
-  .buttons{
-    display: inline-flex;
-    margin-left: 50px;
-  }
+.buttons {
+  display: inline-flex;
+  margin-left: 50px;
+}
 
-  .nav-item-all {
-    margin-left:130px
-  }
+.nav-item-all {
+  margin-left: 130px
+}
 
-  .wishC {
-    position: absolute;
-    top: 10px;
-    left: 250px;
-    
-  }
+.wishC {
+  position: absolute;
+  top: 10px;
+  left: 250px;
 
-  .wishP {
-    position: absolute;
-    top: 200px;
-    left: 500px;
-    
-  }
+}
 
-  .divW {
-    position: absolute;
-    top: 20px;
-    left: 290px;
-  }
+.wishP {
+  position: absolute;
+  top: 200px;
+  left: 500px;
 
-  .wish {
-    display: inline-flexbox;
-  }
+}
 
- .icon {
+.divW {
+  position: absolute;
+  top: 20px;
+  left: 290px;
+}
+
+.wish {
+  display: inline-flexbox;
+}
+
+.icon {
   color: #fcba03;
   /* background-color: yellow; */
- }
+}
 
- .cata{
+.cata {
   color: black;
   text-decoration: none;
- }
+}
+
+.cart-main {
+  display: inline-block;
+  width: 100%
+}
+
+.cart-product {
   
+
+
+}
+
+.cart-order {
+  position: absolute;
+  top: 255px;
+  left: 900px;
+  
+  
+  width: 100%
+
+}
