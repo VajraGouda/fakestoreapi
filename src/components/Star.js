@@ -26,8 +26,6 @@ const Star = ({ stars, reviews }) => {
 
         )
 
-
-
     });
 
     return (
